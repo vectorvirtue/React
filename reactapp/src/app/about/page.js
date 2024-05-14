@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
-
+import Layout from '../components/Layout'
 const page = () => {
   return (
-    <>
-     <div></div>
-     <Header/>
-    </>
-   
+ 
+   <Layout>
+    <div></div>
+   </Layout>
+  
   )
 }
 

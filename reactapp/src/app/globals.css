@@ -16,8 +16,11 @@ header{
   display: flex;
 }
 .body{
-  background-color:  #f3eeee;
+  background-color:  #f5f5f5;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .head{
   background-color: white;
@@ -72,3 +75,100 @@ width: 29px;
 .name{
   white-space: nowrap;
 }
+.center{
+  background-color: white;
+  border-radius: 9px;
+  width: 30%;
+  height: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.txt{
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+color: #000000B2;
+}
+.login{
+  font-family: Roboto;
+font-size: 24px;
+font-weight: 500;
+line-height: 28.13px;
+text-align: left;
+color: #000000CC;
+line-height: 40px;
+}
+label{
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 500;
+line-height: 16.41px;
+text-align: left;
+color: #737373C9;
+}
+input{
+  width: 396.13px;
+height: 50px;
+top: 25.13px;
+gap: 0px;
+border-radius: 4.46px 0px 0px 0px;
+opacity: 0px;
+background-color: #f5f5f5;
+outline: none;
+border: none;
+padding: 10px;
+margin-block:5px
+}
+form{
+  margin-block:20px
+}
+.custom-button {
+  margin-top: 10px;
+  background-color: #EB7F35;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color 0.4s;
+}
+
+.custom-button::before,
+.custom-button::after {
+  content: '';
+  position: absolute;
+  background-color: #EB7F35;
+  width: 0;
+  height: 0;
+  transition: width 0.4s, height 0.4s;
+}
+
+.custom-button::before {
+  top: 0;
+  left: 0;
+}
+
+.custom-button::after {
+  bottom: 0;
+  right: 0;
+}
+
+.custom-button:hover::before,
+.custom-button:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-button:hover {
+  color: #EB7F35; /* Changing text color on hover */
+  text-shadow: 0 0 5px #EB7F35, 0 0 10px #EB7F35, 0 0 15px #EB7F35; /* Neon effect */
+  background-color: #fff;
+}
+
+
